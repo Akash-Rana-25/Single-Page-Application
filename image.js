@@ -23,5 +23,5 @@ function showSlides(n) {
 }
 
 function myFunction(content) {
- document.getElementById(content).scrollIntoView(); 
+ document.getElementById(content).scrollIntoView({behavior: "smooth"}); 
 }
