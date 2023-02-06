@@ -9,6 +9,10 @@ body {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+  position: fixed; /* Set the navbar to fixed position */
+  z-index: 1;
+  top: 0; 
+  width: 100%;
 }
 
 ul {
@@ -51,23 +55,23 @@ li a:hover {
 }
 
 .photo {
-  height: 30rem;
+  height: 40rem;
   flex-wrap: wrap;
-  position: relative;
+  /* position: relative; */
   width: 100%;
 }
 
 .photo img {
-  height: 30rem;
+  height: 40rem;
   width: 100%;
 }
 
 
-.transbox {
-  position: absolute;
+/* .transbox {
+  position: absolute; 
   bottom: 2rem;
   padding-left: 7rem;
-}
+} */
 
 .mid {
   margin-top: 10rem;
@@ -101,6 +105,18 @@ li a:hover {
   color: #D1D3D5;
 
 }
+/* .Client {
+  
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgb(51, 71, 91);
+  color: #D1D3D5;
+
+} */
+
 
 .service_cards {
   display: flex;
@@ -288,7 +304,7 @@ li a:hover {
   align-items: center;
 }
 
-.next {
+.right {
   display: flex;
   box-shadow: 1px 1px 5px #D1D3D5;
   font-size: 48px;
@@ -298,7 +314,7 @@ li a:hover {
   width: 2rem;
   padding: 1rem;
   border: none;
-  background-color: #F1F3F6;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -319,11 +335,16 @@ li a:hover {
 
 .slide_img{
   margin-top: 10rem;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #F1F3F6;
 }
 
 /* Slideshow container */
 .slideshow-container {
-
+  height: auto;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -331,6 +352,11 @@ li a:hover {
 
 .mySlides {
   display: none;
+}
+.mySlides img{
+  height: 30rem;
+  width: 30rem;
+
 }
 .left, .right {
   cursor: pointer;
@@ -350,3 +376,5 @@ li a:hover {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
+
